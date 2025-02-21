@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfarv.timeralarm</string>
+	<key>connections</key>
+	<dict>
+		<key>030A9CF0-0AF1-4CD3-A367-FE288E00F304</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>99D8D9DF-1C42-4779-9C52-2B37A62AF10D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B26D62D6-4139-4CDE-9678-EE4F5F6D4948</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>72E9B16F-E8F3-4B89-8EBC-0F6F4B2D963F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0FFD2517-A85C-4A51-A927-9C894868A9B7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0CAF96C-BFAF-415C-B2C4-5B826270D3C1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8ECF61BD-6C2B-4CF9-821A-32724CA0F78D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A55E52E-B78E-4639-9C8D-89AEBB96F9D9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>927A3F5B-FF09-4179-B846-E18E625C72DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>030A9CF0-0AF1-4CD3-A367-FE288E00F304</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B7175E77-2350-4CD5-B12F-EB7AECC0A719</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>72E9B16F-E8F3-4B89-8EBC-0F6F4B2D963F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alfred Arvidsson</string>
+	<key>description</key>
+	<string>Simple timer and alarm workflow to set efficiently set and manage timers and alarms on MacOS using Alfred.</string>
+	<key>disabled</key>
+	<true/>
+	<key>name</key>
+	<string>Quick Timer &amp; Alarm</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string>#D5D5D5FF</string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>99D8D9DF-1C42-4779-9C52-2B37A62AF10D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>require File.expand_path('lib/timer.rb')
+								
+								puts set_timer(ARGV[0])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>030A9CF0-0AF1-4CD3-A367-FE288E00F304</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>timer</string>
+				<key>subtext</key>
+				<string>Sets a timer, 1d 1h 1m 1s sets a timer for 1 day, 1 hour, 1 minute and 1 second</string>
+				<key>text</key>
+				<string>Set a Timer</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>927A3F5B-FF09-4179-B846-E18E625C72DA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Sosumi</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>B26D62D6-4139-4CDE-9678-EE4F5F6D4948</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1A55E52E-B78E-4639-9C8D-89AEBB96F9D9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>timers</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>require File.expand_path('lib/filter_timers.rb')
+								
+								puts get_timers
+								</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Look at current remaining Timers</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8ECF61BD-6C2B-4CF9-821A-32724CA0F78D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>alarm</string>
+				<key>subtext</key>
+				<string>Sets a timer that will go off at your given target time, 14h 30m 1s sets a timer that goes off 14:30:01</string>
+				<key>text</key>
+				<string>Set an Alarm</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B7175E77-2350-4CD5-B12F-EB7AECC0A719</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string>#CCCCCCFF</string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>0FFD2517-A85C-4A51-A927-9C894868A9B7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>require File.expand_path('lib/timer.rb')
+								
+								puts set_alarm(ARGV[0])</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>72E9B16F-E8F3-4B89-8EBC-0F6F4B2D963F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Sosumi</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>F0CAF96C-BFAF-415C-B2C4-5B826270D3C1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>How to Use Quick Timer &amp; Alarm
+
+1. Set a Timer
+
+Use the keyword timer followed by a duration to start a countdown.
+
+💡 Examples:
+
+    timer 10s → Starts a 10-second timer
+    timer 5m → Starts a 5-minute timer
+    timer 1h 30m → Starts a 1-hour and 30-minute timer
+
+Once the timer expires, Alfred will notify you with a message:
+✅ "1h 30m timer is done!"
+
+2. Set an Alarm
+
+Use the keyword alarm followed by a target time in 24-hour format to schedule an alarm.
+
+💡 Examples:
+
+    alarm 7h 30m → Sets an alarm for 7:30 AM
+    alarm 23h → Sets an alarm for 11:00 PM
+
+If the specified time has already passed today, the alarm will be set for the next day.
+
+Once the alarm time is reached, Alfred will notify you:
+✅ "Alarm set for 07:30 is done!"</string>
+	<key>uidata</key>
+	<dict>
+		<key>030A9CF0-0AF1-4CD3-A367-FE288E00F304</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
+		<key>0FFD2517-A85C-4A51-A927-9C894868A9B7</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>1A55E52E-B78E-4639-9C8D-89AEBB96F9D9</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>215</real>
+		</dict>
+		<key>72E9B16F-E8F3-4B89-8EBC-0F6F4B2D963F</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>8ECF61BD-6C2B-4CF9-821A-32724CA0F78D</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>215</real>
+		</dict>
+		<key>927A3F5B-FF09-4179-B846-E18E625C72DA</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
+		<key>99D8D9DF-1C42-4779-9C52-2B37A62AF10D</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
+		<key>B26D62D6-4139-4CDE-9678-EE4F5F6D4948</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>B7175E77-2350-4CD5-B12F-EB7AECC0A719</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>F0CAF96C-BFAF-415C-B2C4-5B826270D3C1</key>
+		<dict>
+			<key>xpos</key>
+			<real>485</real>
+			<key>ypos</key>
+			<real>535</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.2</string>
+	<key>webaddress</key>
+	<string>https://github.com/alf-arv/timer-alarm-alfred-workflow</string>
+</dict>
+</plist>
