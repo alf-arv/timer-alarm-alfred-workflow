@@ -1,11 +1,5 @@
 # Quick Timer & Alarm - An Alfred 5 for MacOS workflow
-A simple but effective timer and alarm workflow for Alfred 5 for MacOS. This workflow allows you to quickly set timers and alarms using Alfred. Simply type the command followed by a time duration, and the workflow will notify you when the time is up.
-
-![set a timer example](assets/set_timer.png)
-
-![set an alarm example](assets/set_alarm.png)
-
-![timers preview](assets/timers.png)
+A simple but effective timer and alarm workflow for Alfred 5. Simply type the command followed by a time duration, and the workflow will notify you when the time is up.
 
 ## Installation
 Download the latest release here on Github and double click on the `.alfredworkflow` file.
@@ -48,3 +42,11 @@ Timers:
 - You can stack multiple time units for timers (e.g., `1h 15m 30s`). 
 
 Never miss a meeting again! 🚀
+
+### Screenshots
+
+![set a timer example](assets/set_timer.png)
+
+![set an alarm example](assets/set_alarm.png)
+
+![timers preview](assets/timers.png)
